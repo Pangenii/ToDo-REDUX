@@ -23,16 +23,21 @@ const Todos = () => {
           alignItems: "center",
           background: "whitesmoke",
           borderRadius: "4px",
-          gap:"2rem"
+          gap:"2rem",
+          backgroundColor: "rgba(255, 255, 255, 0.1)",   
+          backdropFilter: "blur(10px)",                   
+          border: "1px solid rgba(255, 255, 255, 0.2)",
+          boxShadow: "0 4px 16px rgba(0, 0, 0, 0.2)",  
+          
         }}>
-          <span style={{ flex: 1, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+          <span style={{ flex: 1, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", color:"white" }}>
     {todo.text}
   </span>
            <button onClick={() => { dispatch(removeTodo(todo.id)) }} style={{
-            backgroundColor: "#9e9e9e",
+            backgroundColor: "rgba(224, 4, 4, 0.7)",
             color: "#fff",
             border: "none",
-            borderRadius: "4px",
+            borderRadius: "30px",
             padding: "4px 10px",
             cursor: "pointer",
             flexShrink: 0

@@ -33,12 +33,16 @@ const AddToDo = () => {
       sx={{
         padding: 4,
         width: 400,
-        borderRadius: 3
+        borderRadius: 3,
+        backgroundColor: "rgba(255, 255, 255, 0.1)",  
+        backdropFilter: "blur(10px)",  
+        border: "1px solid rgba(255, 255, 255, 0.2)",
+        boxShadow: "0 8px 32px rgba(0, 0, 0, 0.2)" 
       }}
     >
       <Typography
         variant="h6"
-        sx={{ textAlign: "center", fontWeight: 600, marginBottom: "1em"}}
+        sx={{ textAlign: "center", fontWeight: 600, marginBottom: "1em", color: "white"}}
       >
         Add New Todo
       </Typography>
@@ -60,6 +64,14 @@ const AddToDo = () => {
           value={input}
           onChange={(e) => setInput(e.target.value)}
           required
+          sx={{
+            "& .MuiOutlinedInput-root": {
+              color: "white",
+              "& fieldset": { borderColor: "rgba(255,255,255,0.4)" },
+              "&:hover fieldset": { borderColor: "rgba(255,255,255,0.8)" },
+            },
+            "& .MuiInputLabel-root": { color: "rgba(255,255,255,0.7)" },
+          }}
         />
 
         <Button
@@ -69,7 +81,8 @@ const AddToDo = () => {
           sx={{
             borderRadius: 2,
             textTransform: "none",
-            fontWeight: 600
+            fontWeight: 600,
+            background: "#1DB954 "
           }}
         >
           Add Task
