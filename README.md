@@ -12,7 +12,7 @@ It has two related libraries:
 **React-Native** → Used for building mobile applications
 
 ---
-##**Redux Basics**
+## H1 **Redux Basics**
 
 Redux is an independent state management tool.
 It can be used with:
