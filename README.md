@@ -1,6 +1,6 @@
 SCREENSHOT : 
 <img width="1920" height="875" alt="image" src="https://github.com/user-attachments/assets/a2a1a30d-7700-4042-b175-0f8ba0bd2578" />
-#**React + Redux Learning Notes**
+# **React + Redux Learning Notes**
 
 ---
 This readme contains my notes and understanding of Redux fundamentals.
@@ -12,7 +12,7 @@ It has two related libraries:
 **React-Native** → Used for building mobile applications
 
 ---
-## H1 **Redux Basics**
+## **Redux Basics**
 
 Redux is an independent state management tool.
 It can be used with:
@@ -26,14 +26,14 @@ It can be used with:
 - Other JS frameworks
 
 ---
-##**Core Concepts of Redux**
-1. ###**Store**
+## **Core Concepts of Redux**
+1. ### **Store**
    -Acts as a global state container.
    -Holds the entire application state.
-2. ###**Reducers**
+2. ### **Reducers**
    -All state changes must go through reducers.
    -Functions that update the store.
-3. ###**useSelector**
+3. ### **useSelector**
    -Used to select/access data from the store inside React components.
-4. ###**useDispatch**
+4. ### **useDispatch**
    -Used to dispatch actions (add, remove, update).
